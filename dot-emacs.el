@@ -54,7 +54,7 @@
 
 ;;;
 ;;; fixed-font
-;;;
+;;; https://github.com/Inforgra/fixed-font
 ;;
 ;; 고정폭 한글 글꼴과 영문 글꼴을 같이 사용할 수 있도록 한다.
 ;;
@@ -63,7 +63,7 @@
 ;;
 
 (unless (package-installed-p 'fixed-font)
-  (package-vc-install "https://github.com/kj-kang/fixed-font"))
+  (package-vc-install "https://github.com/Inforga/fixed-font"))
 
 (use-package fixed-font
   :ensure t
