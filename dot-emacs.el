@@ -131,7 +131,7 @@
   (load-theme 'doom-one t))
 
 ;;;
-;;; modeline ¼³Á¤
+;;; modeline
 ;;;
 
 (use-package spaceline
@@ -195,6 +195,18 @@
 
 (use-package magit-gitflow
   :ensure t)
+
+;;
+;; ssh-agency
+;; https://github.com/magit/ssh-agency
+;;
+;; 윈도우 환경에서 ssh-agent 를 사용할 수 있도록 한다. 사용전에 윈도우용
+;; git 을 설치하도록 하자.
+;; https://git-scm.com/download/win
+;;
+
+(when (eq system-type 'windows-nt)
+  (package-vc-install "https://github.com/magit/ssh-agency.git"))
 
 ;;;
 ;;; flycheck
