@@ -63,7 +63,7 @@
 ;;
 
 (unless (package-installed-p 'fixed-font)
-  (package-vc-install "https://github.com/Inforga/fixed-font"))
+  (package-vc-install "https://github.com/Inforgra/fixed-font"))
 
 (use-package fixed-font
   :ensure t
