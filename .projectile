@@ -1,6 +1,14 @@
+- /.dap-breakpoints
+- /.lsp-session-*
+- /.emacs.desktop*
+- /.extension
 - /auto-save-list
 - /eln-cache
 - /elpa
 - /eshell
+- /org-persist/
+- /projectile*
+- /projects
 - /recentf
+- /server
 - /transient
