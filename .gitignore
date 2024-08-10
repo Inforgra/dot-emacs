@@ -13,3 +13,7 @@ l/.emacs.desktop
 *.elc
 /org-persist/
 /server/
+/.dap-breakpoints
+/.extension/
+/.lsp-session-v1
+/projects
