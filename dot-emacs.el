@@ -17,6 +17,7 @@
 (require 'dot-emacs-dev-lisp)
 (require 'dot-emacs-dev-dart-flutter)
 (require 'dot-emacs-dev-markdown)
+(require 'dot-emacs-dev-python)
 (require 'dot-emacs-dev-web)
 
 ;;; dot-emacs.el ends here
