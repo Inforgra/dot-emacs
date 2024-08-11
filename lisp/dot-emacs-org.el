@@ -9,10 +9,10 @@
   ("C-c c" . org-capture)
   ("C-c l" . org-store-links)
   :custom
-  (org-agenda-files
-   '("~/.org/todo.org"))
-  :config
-  (require 'ox-md))
+  (org-agenda-files '("~/.org/inbox.org" "~/.org/gtd.org"))
+  (org-todo-keywords `((sequence "TODO(t)" "|" "DONE(d)" "CANCEL(c)")))
+  (org-capture-templates '(("i" "Inbox" entry (file "~/.org/inbox.org") "* TODO %?\n/Added:/ %U\n"  :empty-lines 1 :prepend 1)))
+  (org-refile-targets (quote (("~/.org/gtd.org" :maxlevel . 1)))))
 
 (provide 'dot-emacs-org)
 ;;; dot-emacs-org.el ends here
