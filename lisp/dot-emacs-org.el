@@ -10,7 +10,7 @@
   ("C-c l" . org-store-links)
   :custom
   (org-agenda-files
-   '("~/Writings/org/todo.org"))
+   '("~/.org/todo.org"))
   :config
   (require 'ox-md))
 
