@@ -2,12 +2,16 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'simple) ;; auto-save-mode
+
 (use-package org
   :ensure t
   :bind
   ("C-c a" . org-agenda)
   ("C-c c" . org-capture)
   ("C-c l" . org-store-links)
+  :hook
+  (org-mode-hook . auto-save-mode)
   :custom
   (org-agenda-files '("~/.org/inbox.org" "~/.org/gtd.org"))
   (org-todo-keywords `((sequence "TODO(t)" "|" "DONE(d)" "CANCEL(c)")))
