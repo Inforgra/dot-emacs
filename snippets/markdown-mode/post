@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: markdown post header
+# key: post
+# --
+---
+published: false
+title: $1
+summary: $2
+date: ${3:`(substring (car (cdr (reverse (file-name-split (buffer-file-name))))) 0 10)`}
+image: $4
+imageAlt: $5
+tags: 
+  - $6
+---
+$0

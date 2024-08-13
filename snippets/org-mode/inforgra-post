@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inforgra-post
+# key: ip
+# --
+[[~/Dropbox/org-writing/${1:`(format-time-string "%Y-%m-%d")`}-${2}/${2}.md][${3}]]
