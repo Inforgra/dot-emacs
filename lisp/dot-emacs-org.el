@@ -14,6 +14,7 @@
   ("C-c c" . org-capture)
   ("C-c l" . org-store-links)
   :init
+  ;; export 할 때 markdown 모드를 추가한다.
   (require 'ox-markdown nil t)
   :hook
   (org-mode . auto-save-mode)
