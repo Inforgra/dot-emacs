@@ -5,13 +5,15 @@
 (require 'company)
 (require 'display-line-numbers)
 (require 'flycheck)
-(require 'whitespace-cleanup-mode)
 (require 'paren)
+(require 'simple)
 (require 'visual-fill-column)
+(require 'whitespace-cleanup-mode)
 
 (use-package markdown-mode
   :ensure t
   :hook
+  (markdown-mode . auto-save-mode)
   (markdown-mode . display-line-numbers-mode)
   (markdown-mode . visual-fill-column-mode))
 
