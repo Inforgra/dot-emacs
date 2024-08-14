@@ -5,7 +5,7 @@
 (require 'simple) ;; auto-save-mode
 
 (unless (package-installed-p 'ox-markdown)
-   (package-vc-install "https://github.com/Inforgra/ox-markdown.git"))
+  (package-vc-install "https://github.com/Inforgra/ox-markdown.git"))
 
 (use-package org
   :ensure t
@@ -17,6 +17,7 @@
   ;; export 할 때 markdown 모드를 추가한다.
   (require 'ox-markdown nil t)
   :hook
+  (org-mode . visual-line-mode)
   (org-mode . auto-save-mode)
   :custom
   (org-export-allow-bind-keywords t)
