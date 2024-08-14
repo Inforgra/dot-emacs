@@ -3,6 +3,10 @@
 ;;; Code:
 
 (require 'simple) ;; auto-save-mode
+(require 'yasnippet)
+
+(unless (package-installed-p 'ox-markdown)
+   (package-vc-install "https://github.com/Inforgra/ox-markdown.git"))
 
 (use-package org
   :ensure t
@@ -10,9 +14,13 @@
   ("C-c a" . org-agenda)
   ("C-c c" . org-capture)
   ("C-c l" . org-store-links)
+  :init
+  (require 'ox-markdown nil t)
   :hook
-  (org-mode-hook . auto-save-mode)
+  (org-mode . yasnippet-mode)
+  (org-mode . auto-save-mode)
   :custom
+  (org-export-allow-bind-keywords t)
   (org-agenda-files '("~/.org/inbox.org" "~/.org/gtd.org"))
   (org-todo-keywords `((sequence "TODO(t)" "|" "DONE(d)" "CANCEL(c)")))
   (org-capture-templates '(("i" "Inbox" entry (file "~/.org/inbox.org") "* TODO %?\n/Added:/ %U\n"  :empty-lines 1 :prepend 1)))
