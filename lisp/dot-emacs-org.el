@@ -3,7 +3,6 @@
 ;;; Code:
 
 (require 'simple) ;; auto-save-mode
-(require 'yasnippet)
 
 (unless (package-installed-p 'ox-markdown)
    (package-vc-install "https://github.com/Inforgra/ox-markdown.git"))
@@ -17,7 +16,6 @@
   :init
   (require 'ox-markdown nil t)
   :hook
-  (org-mode . yasnippet-mode)
   (org-mode . auto-save-mode)
   :custom
   (org-export-allow-bind-keywords t)
