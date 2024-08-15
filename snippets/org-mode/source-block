@@ -1,0 +1,8 @@
+# -*- mode: snippet; -*-
+# name: source block
+# key: bs
+# --
+#+BEGIN_SRC $1
+${2:change}
+#+END_SRC
+$0

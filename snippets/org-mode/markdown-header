@@ -1,0 +1,12 @@
+# name: markdown header
+# key: mh
+# --
+---
+published: false
+title: $1
+date: $2
+image: $3
+imageAlt: $4
+tags:
+- $5
+---
