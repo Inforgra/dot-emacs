@@ -9,6 +9,7 @@
 
 ;;; TODO require 에러 메세지 제거
 (require 'dot-emacs-base)
+(require 'dot-emacs-utils)
 (require 'dot-emacs-theme)
 (require 'dot-emacs-project)
 (require 'dot-emacs-org)
