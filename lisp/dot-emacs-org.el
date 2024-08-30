@@ -26,7 +26,7 @@
   (require 'ox-markdown nil t)
   :hook
   (org-mode . real-auto-save-mode)
-  (org-mode . visual-line-mode)
+  (org-mode . visual-line-fill-column-mode)
   :custom
   (org-export-allow-bind-keywords t)
   (org-agenda-files '("~/.org/inbox.org" "~/.org/gtd.org"))
