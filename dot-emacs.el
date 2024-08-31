@@ -13,6 +13,7 @@
 (require 'dot-emacs-theme)
 (require 'dot-emacs-project)
 (require 'dot-emacs-org)
+(require 'dot-emacs-utils)
 (require 'dot-emacs-dev)
 (require 'dot-emacs-dev-ahk)
 (require 'dot-emacs-dev-lisp)
