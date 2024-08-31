@@ -1,0 +1,10 @@
+# key: hd
+# name: header
+# --
+;;; `(let ((filename (buffer-file-name))) (file-name-with-extension (file-name-base filename) (file-name-extension filename)))` --- $1   -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; Code:
+
+$0
+
+;;; `(let ((filename (buffer-file-name))) (file-name-with-extension (file-name-base filename) (file-name-extension filename)))` Ends here
