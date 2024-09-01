@@ -21,7 +21,7 @@
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 (setq-default c-basic-offset 2)
-(setq-default fill-column 80)
+(setq-default fill-column 90)
 
 
 ;;; 한국어 환경을 설정한다. 인코딩은 ko_KR.utf-8 로 지정한다.
