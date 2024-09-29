@@ -34,6 +34,8 @@
   (org-capture-templates '(("i" "Inbox" entry (file "~/.org/inbox.org") "* TODO %?\n/Added:/ %U\n"  :empty-lines 1 :prepend 1)))
   (org-refile-targets (quote (("~/.org/gtd.org" :maxlevel . 1)))))
 
+(use-package orgpress
+  :load-path "~/dev/Projects/orgpress")
 
 (provide 'dot-emacs-org)
 ;;; dot-emacs-org.el ends here
