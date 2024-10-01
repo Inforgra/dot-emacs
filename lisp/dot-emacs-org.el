@@ -35,7 +35,9 @@
   (org-refile-targets (quote (("~/.org/gtd.org" :maxlevel . 1)))))
 
 (use-package orgpress
-  :load-path "~/dev/Projects/orgpress")
+  :load-path "~/dev/Projects/orgpress"
+  :bind
+  ("C-c t" . orgpress-status))
 
 (provide 'dot-emacs-org)
 ;;; dot-emacs-org.el ends here
