@@ -6,7 +6,10 @@
   "Windows 클립보드에 복사한 이미지를 파일로 저장한다."
   (interactive)
   (let ((filename (file-truename (read-file-name "Write image file from clipboard: "))))
-    (shell-command (concat "powershell -c \"(Get-Clipboard -format image).save('" filename "')\""))))
+    (shell-command (concat "powershell -c \"(Get-Clipboard -format image).save('" filename "')\""))
+    (with-current-buffer (current-buffer)
+      (insert "#+ATTR_ORG: :width 900\n")
+      (insert (concat "[[./"  (file-name-nondirectory filename)  "]]\n")))))
 
 (defun create-new-post ()
   "POST 템플릿을 생성한다."
