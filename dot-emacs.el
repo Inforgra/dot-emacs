@@ -16,6 +16,7 @@
 (require 'dot-emacs-utils)
 (require 'dot-emacs-dev)
 (require 'dot-emacs-dev-ahk)
+(require 'dot-emacs-dev-haskell)
 (require 'dot-emacs-dev-lisp)
 (require 'dot-emacs-dev-dart-flutter)
 (require 'dot-emacs-dev-markdown)
