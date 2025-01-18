@@ -22,4 +22,9 @@
 (require 'dot-emacs-dev-python)
 (require 'dot-emacs-dev-web)
 
+(use-package yaml-mode
+  :ensure t
+  :hook
+  (yaml-mode . display-line-numbers-mode))
+
 ;;; dot-emacs.el ends here
