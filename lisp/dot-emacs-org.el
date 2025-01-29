@@ -35,8 +35,15 @@
   (org-capture-templates '(("i" "Inbox" entry (file "~/.org/inbox.org") "* TODO %?\n/Added:/ %U\n"  :empty-lines 1 :prepend 1)))
   (org-refile-targets (quote (("~/.org/gtd.org" :maxlevel . 1)))))
 
+;;
+;; orgpress
+;;
+
+(unless (package-installed-p 'orgpress)
+  (package-vc-install "https://github.com/Inforgra/orgpress.git"))
+
 (use-package orgpress
-  :load-path "~/dev/Projects/orgpress"
+  :ensure t
   :bind
   ("C-c t" . orgpress-status)
   :config
