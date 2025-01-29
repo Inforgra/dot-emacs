@@ -31,7 +31,7 @@
     (setq fixed-font-ascii-font  "Source Code Pro")
     (setq fixed-font-default-height 100))
   (when (string= "10B" (system-name))
-    (setq fixed-font-hangul-font "맑은 고딕")
+    (setq fixed-font-hangul-font "NanumGothicCoding")
     (setq fixed-font-ascii-font  "Source Code Pro")
     (setq fixed-font-default-height 100))
   :init
