@@ -28,6 +28,7 @@
   (org-mode . real-auto-save-mode)
   (org-mode . visual-line-fill-column-mode)
   :custom
+  (org-image-actual-width nil)
   (org-export-allow-bind-keywords t)
   (org-agenda-files '("~/.org/inbox.org" "~/.org/gtd.org"))
   (org-todo-keywords `((sequence "TODO(t)" "|" "DONE(d)" "CANCEL(c)")))
@@ -37,7 +38,10 @@
 (use-package orgpress
   :load-path "~/dev/Projects/orgpress"
   :bind
-  ("C-c t" . orgpress-status))
+  ("C-c t" . orgpress-status)
+  :config
+  (when (string= "10B" (system-name))
+    (setq orgpress-root "e:/Dropbox/Writings")))
 
 (provide 'dot-emacs-org)
 ;;; dot-emacs-org.el ends here
