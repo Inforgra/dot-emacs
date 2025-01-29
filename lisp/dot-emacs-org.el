@@ -48,7 +48,10 @@
   ("C-c t" . orgpress-status)
   :config
   (when (string= "10B" (system-name))
-    (setq orgpress-root "e:/Dropbox/Writings")))
+    (setq orgpress-root "e:/Dropbox/Writings"))
+  (when (string= "10B-NOTE" (system-name))
+    (setq orgpress-root "C:/Users/kjkang/Dropbox/Writings"))
+  )
 
 (provide 'dot-emacs-org)
 ;;; dot-emacs-org.el ends here
