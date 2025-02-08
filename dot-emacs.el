@@ -22,6 +22,7 @@
 (require 'dot-emacs-dev-markdown)
 (require 'dot-emacs-dev-python)
 (require 'dot-emacs-dev-web)
+(require 'dot-emacs-powershell)
 
 (use-package yaml-mode
   :ensure t
